@@ -110,24 +110,6 @@
     },
     {
       "id": "veniqa-013",
-      "question": "What is the session duration in milliseconds for user authentication?",
-      "answer": "86400000",
-      "difficulty": 4,
-      "tags": ["session", "authentication", "security", "configuration"],
-      "type": "factual",
-      "files": ["src/management-server/app.js", "src/shopping-server/app.js"]
-    },
-    {
-      "id": "veniqa-014",
-      "question": "What schema validation pattern prevents non-S3 image URLs in product data?",
-      "answer": "^https://s3",
-      "difficulty": 4,
-      "tags": ["database", "validation", "regex", "security"],
-      "type": "factual",
-      "files": ["src/database/schemas/productSchema.js"]
-    },
-    {
-      "id": "veniqa-015",
       "question": "In the authentication flow, what property determines if a management user needs approval before login?",
       "answer": "approved",
       "difficulty": 4,
@@ -136,49 +118,13 @@
       "files": ["src/database/schemas/userSchema.js", "src/management-server/authentication/passportAuth.js"]
     },
     {
-      "id": "veniqa-016",
-      "question": "What database operation ensures referential integrity when a product references a category that must exist?",
-      "answer": "populate",
-      "difficulty": 4,
-      "tags": ["database", "mongodb", "relationships", "integrity"],
-      "type": "factual",
-      "files": ["src/database/schemas/productSchema.js", "src/database/models/productModel.js"]
-    },
-    {
-      "id": "veniqa-017",
+      "id": "veniqa-014",
       "question": "What capability must an administrative user possess to modify the product inventory across all marketplace vendors?",
       "answer": "CATALOG_MANAGE",
-      "difficulty": 5,
+      "difficulty": 4,
       "tags": ["authorization", "permissions", "catalog", "security"],
       "type": "factual",
       "files": ["src/config/database/roles.json", "src/management-server/authentication/passportAuth.js"]
-    },
-    {
-      "id": "veniqa-018",
-      "question": "What mechanism prevents unauthorized users from accessing server resources when session data becomes unavailable?",
-      "answer": "ensureAuthenticated",
-      "difficulty": 5,
-      "tags": ["authentication", "middleware", "security", "session"],
-      "type": "factual",
-      "files": ["src/management-server/authentication/passportAuth.js", "src/shopping-server/authentication/passportAuth.js"]
-    },
-    {
-      "id": "veniqa-019",
-      "question": "What property in the customer data structure tracks the cumulative monetary value of all completed transactions?",
-      "answer": "totalSpent",
-      "difficulty": 5,
-      "tags": ["database", "user", "orders", "analytics"],
-      "type": "factual",
-      "files": ["src/database/schemas/userSchema.js"]
-    },
-    {
-      "id": "veniqa-020",
-      "question": "What validation constraint ensures product pricing cannot be manipulated through negative currency amounts?",
-      "answer": "min: 0",
-      "difficulty": 5,
-      "tags": ["database", "validation", "security", "pricing"],
-      "type": "factual",
-      "files": ["src/database/schemas/productSchema.js"]
     }
   ]
 }
