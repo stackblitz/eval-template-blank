@@ -1,0 +1,13 @@
+mutation($continuationToken: String!, $securityCode: String!) {
+  authentication {
+    loginTFA(continuationToken: $continuationToken, securityCode: $securityCode) {
+      responseResult {
+        succeeded
+        errorCode
+        slug
+        message
+      }
+      jwt
+    }
+  }
+}

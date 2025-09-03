@@ -1,0 +1,12 @@
+mutation($targets: [StorageTargetInput]!) {
+  storage {
+    updateTargets(targets: $targets) {
+      responseResult {
+        succeeded
+        errorCode
+        slug
+        message
+      }
+    }
+  }
+}

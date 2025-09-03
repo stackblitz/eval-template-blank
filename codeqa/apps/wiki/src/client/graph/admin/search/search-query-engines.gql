@@ -1,0 +1,17 @@
+query {
+  search {
+    searchEngines(orderBy: "title") {
+      isEnabled
+      key
+      title
+      description
+      logo
+      website
+      isAvailable
+      config {
+        key
+        value
+      }
+    }
+  }
+}

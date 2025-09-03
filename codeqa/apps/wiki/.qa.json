@@ -1,0 +1,148 @@
+{
+  "questions": [
+    {
+      "id": "wiki-001",
+      "question": "What is the main entry point file for the Wiki.js server?",
+      "answer": "server/index.js",
+      "difficulty": 1,
+      "tags": ["architecture", "entry-point"],
+      "type": "factual",
+      "files": ["server/index.js"]
+    },
+    {
+      "id": "wiki-002",
+      "question": "What is the default port specified in the sample configuration?",
+      "answer": "3000",
+      "difficulty": 1,
+      "tags": ["configuration", "port"],
+      "type": "factual",
+      "files": ["config.sample.yml"]
+    },
+    {
+      "id": "wiki-003",
+      "question": "Which core module is loaded for handling authentication in master.js?",
+      "answer": "./core/auth",
+      "difficulty": 2,
+      "tags": ["architecture", "authentication", "modules"],
+      "type": "factual",
+      "files": ["server/master.js"]
+    },
+    {
+      "id": "wiki-004",
+      "question": "What session store class is used for storing Express sessions?",
+      "answer": "KnexSessionStore",
+      "difficulty": 3,
+      "tags": ["sessions", "database", "middleware"],
+      "type": "factual",
+      "files": ["server/master.js"]
+    },
+    {
+      "id": "wiki-005",
+      "question": "What method is called by the kernel to initialize authentication strategies during boot?",
+      "answer": "activateStrategies",
+      "difficulty": 2,
+      "tags": ["boot-sequence", "authentication", "methods"],
+      "type": "factual",
+      "files": ["server/core/kernel.js", "server/core/auth.js"]
+    },
+    {
+      "id": "wiki-006",
+      "question": "What is the table name used by the Editor model class?",
+      "answer": "editors",
+      "difficulty": 2,
+      "tags": ["models", "database", "orm"],
+      "type": "factual",
+      "files": ["server/models/editors.js"]
+    },
+    {
+      "id": "wiki-007",
+      "question": "What method is called after preBootMaster to complete the master boot sequence?",
+      "answer": "postBootMaster",
+      "difficulty": 3,
+      "tags": ["boot-sequence", "kernel", "lifecycle"],
+      "type": "factual",
+      "files": ["server/core/kernel.js"]
+    },
+    {
+      "id": "wiki-008",
+      "question": "What static method refreshes authentication strategies from disk during the post-boot sequence?",
+      "answer": "refreshStrategiesFromDisk",
+      "difficulty": 3,
+      "tags": ["authentication", "disk-loading", "static-methods"],
+      "type": "factual",
+      "files": ["server/core/kernel.js", "server/models/authentication.js"]
+    },
+    {
+      "id": "wiki-009",
+      "question": "What cryptographic algorithm is used for JWT token validation?",
+      "answer": "RS256",
+      "difficulty": 2,
+      "tags": ["jwt", "cryptography", "security"],
+      "type": "factual",
+      "files": ["server/core/auth.js"]
+    },
+    {
+      "id": "wiki-010",
+      "question": "What design pattern is implemented by the WIKI.events structure with inbound and outbound properties?",
+      "answer": "Observer",
+      "difficulty": 4,
+      "tags": ["design-patterns", "events", "architecture"],
+      "type": "conceptual",
+      "files": ["server/core/kernel.js"]
+    },
+    {
+      "id": "wiki-011",
+      "question": "What ORM library does Wiki.js use for database modeling?",
+      "answer": "Objection",
+      "difficulty": 2,
+      "tags": ["orm", "database", "architecture"],
+      "type": "factual",
+      "files": ["server/models/pages.js", "server/models/users.js"]
+    },
+    {
+      "id": "wiki-012",
+      "question": "What software engineering principle is demonstrated by dynamically requiring authentication strategy modules?",
+      "answer": "Dependency Injection",
+      "difficulty": 4,
+      "tags": ["dependency-injection", "modularity", "design-patterns"],
+      "type": "conceptual",
+      "files": ["server/core/auth.js"]
+    },
+    {
+      "id": "wiki-013",
+      "question": "Which CSS minification library is used to process page styles?",
+      "answer": "CleanCSS",
+      "difficulty": 2,
+      "tags": ["css", "minification", "optimization"],
+      "type": "factual",
+      "files": ["server/models/pages.js"]
+    },
+    {
+      "id": "wiki-014",
+      "question": "What architectural pattern is used for managing authentication strategies in passport.js integration?",
+      "answer": "Strategy",
+      "difficulty": 5,
+      "tags": ["strategy-pattern", "authentication", "design-patterns"],
+      "type": "conceptual",
+      "files": ["server/core/auth.js"]
+    },
+    {
+      "id": "wiki-015",
+      "question": "What relationship type is used between User and Groups models in Objection.js?",
+      "answer": "ManyToManyRelation",
+      "difficulty": 3,
+      "tags": ["orm", "relationships", "database"],
+      "type": "factual",
+      "files": ["server/models/users.js"]
+    },
+    {
+      "id": "wiki-016",
+      "question": "What security principle is enforced by the checkAccess method before allowing script modifications?",
+      "answer": "Authorization",
+      "difficulty": 5,
+      "tags": ["security", "authorization", "access-control"],
+      "type": "conceptual",
+      "files": ["server/models/pages.js"]
+    }
+  ]
+}

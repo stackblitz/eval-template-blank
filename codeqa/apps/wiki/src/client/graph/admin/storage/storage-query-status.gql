@@ -1,0 +1,11 @@
+query {
+  storage {
+    status {
+      key
+      title
+      status
+      message
+      lastAttempt
+    }
+  }
+}

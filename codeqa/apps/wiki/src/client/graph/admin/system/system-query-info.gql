@@ -1,0 +1,21 @@
+query {
+  system {
+    info {
+      configFile
+      cpuCores
+      currentVersion
+      dbHost
+      dbType
+      dbVersion
+      hostname
+      latestVersion
+      latestVersionReleaseDate
+      nodeVersion
+      operatingSystem
+      platform
+      ramTotal
+      upgradeCapable
+      workingDirectory
+    }
+  }
+}
