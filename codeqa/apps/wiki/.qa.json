@@ -134,15 +134,6 @@
       "tags": ["orm", "relationships", "database"],
       "type": "factual",
       "files": ["server/models/users.js"]
-    },
-    {
-      "id": "wiki-016",
-      "question": "What security principle is enforced by the checkAccess method before allowing script modifications?",
-      "answer": "Authorization",
-      "difficulty": 5,
-      "tags": ["security", "authorization", "access-control"],
-      "type": "conceptual",
-      "files": ["server/models/pages.js"]
     }
   ]
 }
