@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "id": "umami-001",
+      "question": "What is the package name?",
+      "answer": "umami",
+      "difficulty": 1,
+      "tags": ["package", "name"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "umami-002",
+      "question": "Which framework is used for development according to the dev script?",
+      "answer": "next",
+      "difficulty": 1,
+      "tags": ["framework", "development"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "umami-003",
+      "question": "What script command builds the tracker component?",
+      "answer": "build-tracker",
+      "difficulty": 2,
+      "tags": ["build", "scripts", "tracker"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "umami-004",
+      "question": "What is the description of this analytics software?",
+      "answer": "A modern, privacy-focused alternative to Google Analytics.",
+      "difficulty": 2,
+      "tags": ["description", "analytics", "privacy"],
+      "type": "factual",
+      "files": ["package.json"]
+    }
+  ]
+}

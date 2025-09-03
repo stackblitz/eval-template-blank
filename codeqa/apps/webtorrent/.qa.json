@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "id": "webtorrent-001",
+      "question": "What is the main entry point file specified in package.json?",
+      "answer": "index.js",
+      "difficulty": 1,
+      "tags": ["entry-point", "package.json"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "webtorrent-002",
+      "question": "What is the name of the package?",
+      "answer": "webtorrent",
+      "difficulty": 1,
+      "tags": ["package", "name"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "webtorrent-003",
+      "question": "Which module is imported for DHT functionality?",
+      "answer": "bittorrent-dht",
+      "difficulty": 2,
+      "tags": ["dht", "imports", "networking"],
+      "type": "factual",
+      "files": ["index.js"]
+    },
+    {
+      "id": "webtorrent-004",
+      "question": "What base class does WebTorrent extend from?",
+      "answer": "EventEmitter",
+      "difficulty": 2,
+      "tags": ["inheritance", "events", "architecture"],
+      "type": "factual",
+      "files": ["index.js"]
+    }
+  ]
+}

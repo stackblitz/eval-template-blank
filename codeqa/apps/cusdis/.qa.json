@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "id": "cusdis-001",
+      "question": "What is the package name?",
+      "answer": "cusdis",
+      "difficulty": 1,
+      "tags": ["package", "name"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "cusdis-002",
+      "question": "What ORM tool is used for database operations?",
+      "answer": "prisma",
+      "difficulty": 1,
+      "tags": ["database", "orm"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "cusdis-003",
+      "question": "What is the default database type used in the dev script?",
+      "answer": "sqlite",
+      "difficulty": 2,
+      "tags": ["database", "development", "sqlite"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "cusdis-004",
+      "question": "What port does the application start on?",
+      "answer": "3000",
+      "difficulty": 2,
+      "tags": ["port", "server", "configuration"],
+      "type": "factual",
+      "files": ["package.json"]
+    }
+  ]
+}

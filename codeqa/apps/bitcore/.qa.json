@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "id": "bitcore-001",
+      "question": "What is the version number of this bitcore project?",
+      "answer": "8.25.8",
+      "difficulty": 1,
+      "tags": ["version", "package"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "bitcore-002",
+      "question": "Which tool is used for managing multiple packages in this monorepo?",
+      "answer": "lerna",
+      "difficulty": 1,
+      "tags": ["monorepo", "lerna", "packages"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "bitcore-003",
+      "question": "What command starts the bitcore-node service?",
+      "answer": "node",
+      "difficulty": 2,
+      "tags": ["scripts", "node", "services"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "bitcore-004",
+      "question": "What is the printWidth setting for prettier formatting?",
+      "answer": "120",
+      "difficulty": 2,
+      "tags": ["prettier", "formatting", "config"],
+      "type": "factual",
+      "files": ["package.json"]
+    }
+  ]
+}

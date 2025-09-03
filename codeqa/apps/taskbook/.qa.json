@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "id": "taskbook-001",
+      "question": "What is the CLI command name for taskbook?",
+      "answer": "tb",
+      "difficulty": 1,
+      "tags": ["cli", "bin", "command"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "taskbook-002",
+      "question": "What is the main CLI entry point file?",
+      "answer": "cli.js",
+      "difficulty": 1,
+      "tags": ["entry-point", "cli"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "taskbook-003",
+      "question": "Which module is used for CLI argument parsing?",
+      "answer": "meow",
+      "difficulty": 2,
+      "tags": ["cli", "parsing", "arguments"],
+      "type": "factual",
+      "files": ["cli.js"]
+    },
+    {
+      "id": "taskbook-004",
+      "question": "Which module provides update notifications for the CLI?",
+      "answer": "update-notifier",
+      "difficulty": 2,
+      "tags": ["updates", "notifications", "cli"],
+      "type": "factual",
+      "files": ["cli.js"]
+    }
+  ]
+}

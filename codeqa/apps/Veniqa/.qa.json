@@ -1,0 +1,184 @@
+{
+  "questions": [
+    {
+      "id": "veniqa-001",
+      "question": "What is the package name?",
+      "answer": "veniqa",
+      "difficulty": 1,
+      "tags": ["package", "name"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "veniqa-002",
+      "question": "What version is this Veniqa package?",
+      "answer": "2.3.0",
+      "difficulty": 1,
+      "tags": ["version", "package"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "veniqa-003",
+      "question": "What type of solution is Veniqa described as?",
+      "answer": "E-commerce solution",
+      "difficulty": 1,
+      "tags": ["description", "ecommerce"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "veniqa-004",
+      "question": "Which frontend framework is listed in the keywords?",
+      "answer": "Vue.js",
+      "difficulty": 2,
+      "tags": ["frontend", "framework", "vue"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "veniqa-005",
+      "question": "What database ODM is used for MongoDB operations?",
+      "answer": "mongoose",
+      "difficulty": 2,
+      "tags": ["database", "mongodb", "odm"],
+      "type": "factual",
+      "files": ["src/management-server/package.json", "src/shopping-server/package.json"]
+    },
+    {
+      "id": "veniqa-006",
+      "question": "What port does the management server run on?",
+      "answer": "4202",
+      "difficulty": 2,
+      "tags": ["server", "port", "management"],
+      "type": "factual",
+      "files": ["src/management-server/app.js"]
+    },
+    {
+      "id": "veniqa-007",
+      "question": "What session store technology is used for Redis integration?",
+      "answer": "connect-redis",
+      "difficulty": 2,
+      "tags": ["session", "redis", "middleware"],
+      "type": "factual",
+      "files": ["src/management-server/package.json", "src/shopping-server/package.json"]
+    },
+    {
+      "id": "veniqa-008",
+      "question": "What authentication library is used for passport strategies?",
+      "answer": "passport",
+      "difficulty": 2,
+      "tags": ["authentication", "passport", "security"],
+      "type": "factual",
+      "files": ["src/management-server/package.json", "src/shopping-server/package.json"]
+    },
+    {
+      "id": "veniqa-009",
+      "question": "What payment processing service is integrated besides Stripe?",
+      "answer": "khalti",
+      "difficulty": 3,
+      "tags": ["payment", "gateway", "integration"],
+      "type": "factual",
+      "files": ["src/shopping-server/package.json"]
+    },
+    {
+      "id": "veniqa-010",
+      "question": "What hashing algorithm is used for password encryption in the user schema?",
+      "answer": "bcrypt",
+      "difficulty": 3,
+      "tags": ["password", "hashing", "security", "database"],
+      "type": "factual",
+      "files": ["src/database/schemas/userSchema.js"]
+    },
+    {
+      "id": "veniqa-011",
+      "question": "What collection name stores the main product catalog data?",
+      "answer": "veniqa_curated_products",
+      "difficulty": 3,
+      "tags": ["database", "collection", "products"],
+      "type": "factual",
+      "files": ["src/database/models/productModel.js"]
+    },
+    {
+      "id": "veniqa-012",
+      "question": "How many distinct permission types are defined in the roles configuration?",
+      "answer": "12",
+      "difficulty": 4,
+      "tags": ["authorization", "roles", "permissions"],
+      "type": "factual",
+      "files": ["src/config/database/roles.json"]
+    },
+    {
+      "id": "veniqa-013",
+      "question": "What is the session duration in milliseconds for user authentication?",
+      "answer": "86400000",
+      "difficulty": 4,
+      "tags": ["session", "authentication", "security", "configuration"],
+      "type": "factual",
+      "files": ["src/management-server/app.js", "src/shopping-server/app.js"]
+    },
+    {
+      "id": "veniqa-014",
+      "question": "What schema validation pattern prevents non-S3 image URLs in product data?",
+      "answer": "^https://s3",
+      "difficulty": 4,
+      "tags": ["database", "validation", "regex", "security"],
+      "type": "factual",
+      "files": ["src/database/schemas/productSchema.js"]
+    },
+    {
+      "id": "veniqa-015",
+      "question": "In the authentication flow, what property determines if a management user needs approval before login?",
+      "answer": "approved",
+      "difficulty": 4,
+      "tags": ["authentication", "user", "approval", "security"],
+      "type": "factual",
+      "files": ["src/database/schemas/userSchema.js", "src/management-server/authentication/passportAuth.js"]
+    },
+    {
+      "id": "veniqa-016",
+      "question": "What database operation ensures referential integrity when a product references a category that must exist?",
+      "answer": "populate",
+      "difficulty": 4,
+      "tags": ["database", "mongodb", "relationships", "integrity"],
+      "type": "factual",
+      "files": ["src/database/schemas/productSchema.js", "src/database/models/productModel.js"]
+    },
+    {
+      "id": "veniqa-017",
+      "question": "What capability must an administrative user possess to modify the product inventory across all marketplace vendors?",
+      "answer": "CATALOG_MANAGE",
+      "difficulty": 5,
+      "tags": ["authorization", "permissions", "catalog", "security"],
+      "type": "factual",
+      "files": ["src/config/database/roles.json", "src/management-server/authentication/passportAuth.js"]
+    },
+    {
+      "id": "veniqa-018",
+      "question": "What mechanism prevents unauthorized users from accessing server resources when session data becomes unavailable?",
+      "answer": "ensureAuthenticated",
+      "difficulty": 5,
+      "tags": ["authentication", "middleware", "security", "session"],
+      "type": "factual",
+      "files": ["src/management-server/authentication/passportAuth.js", "src/shopping-server/authentication/passportAuth.js"]
+    },
+    {
+      "id": "veniqa-019",
+      "question": "What property in the customer data structure tracks the cumulative monetary value of all completed transactions?",
+      "answer": "totalSpent",
+      "difficulty": 5,
+      "tags": ["database", "user", "orders", "analytics"],
+      "type": "factual",
+      "files": ["src/database/schemas/userSchema.js"]
+    },
+    {
+      "id": "veniqa-020",
+      "question": "What validation constraint ensures product pricing cannot be manipulated through negative currency amounts?",
+      "answer": "min: 0",
+      "difficulty": 5,
+      "tags": ["database", "validation", "security", "pricing"],
+      "type": "factual",
+      "files": ["src/database/schemas/productSchema.js"]
+    }
+  ]
+}

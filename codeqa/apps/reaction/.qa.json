@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "id": "reaction-001",
+      "question": "What is the name of this monorepo package?",
+      "answer": "reaction-monorepo",
+      "difficulty": 1,
+      "tags": ["package", "monorepo"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "reaction-002",
+      "question": "What type of platform is Reaction described as?",
+      "answer": "ecommerce platform",
+      "difficulty": 1,
+      "tags": ["description", "ecommerce"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "reaction-003",
+      "question": "What package manager is used for running commands across workspaces?",
+      "answer": "pnpm",
+      "difficulty": 2,
+      "tags": ["package-manager", "workspaces"],
+      "type": "factual",
+      "files": ["package.json"]
+    },
+    {
+      "id": "reaction-004",
+      "question": "What is the minimum Node.js version required?",
+      "answer": "18.10.0",
+      "difficulty": 2,
+      "tags": ["node", "version", "engines"],
+      "type": "factual",
+      "files": ["package.json"]
+    }
+  ]
+}
